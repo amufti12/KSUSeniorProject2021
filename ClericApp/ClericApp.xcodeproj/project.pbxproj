@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8261C57E24FCCAE200FCFE0F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261C57D24FCCAE200FCFE0F /* Tests_iOS.swift */; };
+		8261C58924FCCAE200FCFE0F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261C58824FCCAE200FCFE0F /* Tests_macOS.swift */; };
+		8261C58B24FCCAE200FCFE0F /* ClericAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261C56224FCCAE100FCFE0F /* ClericAppApp.swift */; };
+		8261C58C24FCCAE200FCFE0F /* ClericAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261C56224FCCAE100FCFE0F /* ClericAppApp.swift */; };
+		8261C58D24FCCAE200FCFE0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261C56324FCCAE100FCFE0F /* ContentView.swift */; };
+		8261C58E24FCCAE200FCFE0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261C56324FCCAE100FCFE0F /* ContentView.swift */; };
+		8261C58F24FCCAE200FCFE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8261C56424FCCAE200FCFE0F /* Assets.xcassets */; };
+		8261C59024FCCAE200FCFE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8261C56424FCCAE200FCFE0F /* Assets.xcassets */; };
+		8261C5A124FCCC4D00FCFE0F /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 8261C5A024FCCC4D00FCFE0F /* CareKitFHIR */; };
+		8261C5A324FCCC4D00FCFE0F /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8261C5A224FCCC4D00FCFE0F /* CareKit */; };
+		8261C5A524FCCC4D00FCFE0F /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 8261C5A424FCCC4D00FCFE0F /* CareKitStore */; };
+		8261C5A724FCCC4D00FCFE0F /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8261C5A624FCCC4D00FCFE0F /* CareKitUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8261C57A24FCCAE200FCFE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8261C55D24FCCAE100FCFE0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8261C56824FCCAE200FCFE0F;
+			remoteInfo = "ClericApp (iOS)";
+		};
+		8261C58524FCCAE200FCFE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8261C55D24FCCAE100FCFE0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8261C57024FCCAE200FCFE0F;
+			remoteInfo = "ClericApp (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8261C56224FCCAE100FCFE0F /* ClericAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClericAppApp.swift; sourceTree = "<group>"; };
+		8261C56324FCCAE100FCFE0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8261C56424FCCAE200FCFE0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8261C56924FCCAE200FCFE0F /* ClericApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClericApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8261C56C24FCCAE200FCFE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8261C57124FCCAE200FCFE0F /* ClericApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClericApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8261C57324FCCAE200FCFE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8261C57424FCCAE200FCFE0F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8261C57924FCCAE200FCFE0F /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8261C57D24FCCAE200FCFE0F /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		8261C57F24FCCAE200FCFE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8261C58424FCCAE200FCFE0F /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8261C58824FCCAE200FCFE0F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		8261C58A24FCCAE200FCFE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8261C56624FCCAE200FCFE0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8261C5A324FCCC4D00FCFE0F /* CareKit in Frameworks */,
+				8261C5A124FCCC4D00FCFE0F /* CareKitFHIR in Frameworks */,
+				8261C5A724FCCC4D00FCFE0F /* CareKitUI in Frameworks */,
+				8261C5A524FCCC4D00FCFE0F /* CareKitStore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8261C56E24FCCAE200FCFE0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8261C57624FCCAE200FCFE0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8261C58124FCCAE200FCFE0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8261C55C24FCCAE100FCFE0F = {
+			isa = PBXGroup;
+			children = (
+				8261C56124FCCAE100FCFE0F /* Shared */,
+				8261C56B24FCCAE200FCFE0F /* iOS */,
+				8261C57224FCCAE200FCFE0F /* macOS */,
+				8261C57C24FCCAE200FCFE0F /* Tests iOS */,
+				8261C58724FCCAE200FCFE0F /* Tests macOS */,
+				8261C56A24FCCAE200FCFE0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8261C56124FCCAE100FCFE0F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8261C56224FCCAE100FCFE0F /* ClericAppApp.swift */,
+				8261C56324FCCAE100FCFE0F /* ContentView.swift */,
+				8261C56424FCCAE200FCFE0F /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8261C56A24FCCAE200FCFE0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8261C56924FCCAE200FCFE0F /* ClericApp.app */,
+				8261C57124FCCAE200FCFE0F /* ClericApp.app */,
+				8261C57924FCCAE200FCFE0F /* Tests iOS.xctest */,
+				8261C58424FCCAE200FCFE0F /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8261C56B24FCCAE200FCFE0F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8261C56C24FCCAE200FCFE0F /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		8261C57224FCCAE200FCFE0F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				8261C57324FCCAE200FCFE0F /* Info.plist */,
+				8261C57424FCCAE200FCFE0F /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		8261C57C24FCCAE200FCFE0F /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8261C57D24FCCAE200FCFE0F /* Tests_iOS.swift */,
+				8261C57F24FCCAE200FCFE0F /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		8261C58724FCCAE200FCFE0F /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				8261C58824FCCAE200FCFE0F /* Tests_macOS.swift */,
+				8261C58A24FCCAE200FCFE0F /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8261C56824FCCAE200FCFE0F /* ClericApp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8261C59324FCCAE200FCFE0F /* Build configuration list for PBXNativeTarget "ClericApp (iOS)" */;
+			buildPhases = (
+				8261C56524FCCAE200FCFE0F /* Sources */,
+				8261C56624FCCAE200FCFE0F /* Frameworks */,
+				8261C56724FCCAE200FCFE0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ClericApp (iOS)";
+			packageProductDependencies = (
+				8261C5A024FCCC4D00FCFE0F /* CareKitFHIR */,
+				8261C5A224FCCC4D00FCFE0F /* CareKit */,
+				8261C5A424FCCC4D00FCFE0F /* CareKitStore */,
+				8261C5A624FCCC4D00FCFE0F /* CareKitUI */,
+			);
+			productName = "ClericApp (iOS)";
+			productReference = 8261C56924FCCAE200FCFE0F /* ClericApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8261C57024FCCAE200FCFE0F /* ClericApp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8261C59624FCCAE200FCFE0F /* Build configuration list for PBXNativeTarget "ClericApp (macOS)" */;
+			buildPhases = (
+				8261C56D24FCCAE200FCFE0F /* Sources */,
+				8261C56E24FCCAE200FCFE0F /* Frameworks */,
+				8261C56F24FCCAE200FCFE0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ClericApp (macOS)";
+			productName = "ClericApp (macOS)";
+			productReference = 8261C57124FCCAE200FCFE0F /* ClericApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8261C57824FCCAE200FCFE0F /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8261C59924FCCAE200FCFE0F /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				8261C57524FCCAE200FCFE0F /* Sources */,
+				8261C57624FCCAE200FCFE0F /* Frameworks */,
+				8261C57724FCCAE200FCFE0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8261C57B24FCCAE200FCFE0F /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 8261C57924FCCAE200FCFE0F /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8261C58324FCCAE200FCFE0F /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8261C59C24FCCAE200FCFE0F /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				8261C58024FCCAE200FCFE0F /* Sources */,
+				8261C58124FCCAE200FCFE0F /* Frameworks */,
+				8261C58224FCCAE200FCFE0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8261C58624FCCAE200FCFE0F /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 8261C58424FCCAE200FCFE0F /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8261C55D24FCCAE100FCFE0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					8261C56824FCCAE200FCFE0F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					8261C57024FCCAE200FCFE0F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					8261C57824FCCAE200FCFE0F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8261C56824FCCAE200FCFE0F;
+					};
+					8261C58324FCCAE200FCFE0F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8261C57024FCCAE200FCFE0F;
+					};
+				};
+			};
+			buildConfigurationList = 8261C56024FCCAE100FCFE0F /* Build configuration list for PBXProject "ClericApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8261C55C24FCCAE100FCFE0F;
+			packageReferences = (
+				8261C59F24FCCC4D00FCFE0F /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
+			productRefGroup = 8261C56A24FCCAE200FCFE0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8261C56824FCCAE200FCFE0F /* ClericApp (iOS) */,
+				8261C57024FCCAE200FCFE0F /* ClericApp (macOS) */,
+				8261C57824FCCAE200FCFE0F /* Tests iOS */,
+				8261C58324FCCAE200FCFE0F /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8261C56724FCCAE200FCFE0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8261C58F24FCCAE200FCFE0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8261C56F24FCCAE200FCFE0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8261C59024FCCAE200FCFE0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8261C57724FCCAE200FCFE0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8261C58224FCCAE200FCFE0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8261C56524FCCAE200FCFE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8261C58D24FCCAE200FCFE0F /* ContentView.swift in Sources */,
+				8261C58B24FCCAE200FCFE0F /* ClericAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8261C56D24FCCAE200FCFE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8261C58E24FCCAE200FCFE0F /* ContentView.swift in Sources */,
+				8261C58C24FCCAE200FCFE0F /* ClericAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8261C57524FCCAE200FCFE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8261C57E24FCCAE200FCFE0F /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8261C58024FCCAE200FCFE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8261C58924FCCAE200FCFE0F /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8261C57B24FCCAE200FCFE0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8261C56824FCCAE200FCFE0F /* ClericApp (iOS) */;
+			targetProxy = 8261C57A24FCCAE200FCFE0F /* PBXContainerItemProxy */;
+		};
+		8261C58624FCCAE200FCFE0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8261C57024FCCAE200FCFE0F /* ClericApp (macOS) */;
+			targetProxy = 8261C58524FCCAE200FCFE0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8261C59124FCCAE200FCFE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8261C59224FCCAE200FCFE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8261C59424FCCAE200FCFE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.ClericApp;
+				PRODUCT_NAME = ClericApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8261C59524FCCAE200FCFE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.ClericApp;
+				PRODUCT_NAME = ClericApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8261C59724FCCAE200FCFE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.ClericApp;
+				PRODUCT_NAME = ClericApp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8261C59824FCCAE200FCFE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.ClericApp;
+				PRODUCT_NAME = ClericApp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8261C59A24FCCAE200FCFE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seniorproject.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ClericApp (iOS)";
+			};
+			name = Debug;
+		};
+		8261C59B24FCCAE200FCFE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seniorproject.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ClericApp (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8261C59D24FCCAE200FCFE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seniorproject.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "ClericApp (macOS)";
+			};
+			name = Debug;
+		};
+		8261C59E24FCCAE200FCFE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seniorproject.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "ClericApp (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8261C56024FCCAE100FCFE0F /* Build configuration list for PBXProject "ClericApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8261C59124FCCAE200FCFE0F /* Debug */,
+				8261C59224FCCAE200FCFE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8261C59324FCCAE200FCFE0F /* Build configuration list for PBXNativeTarget "ClericApp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8261C59424FCCAE200FCFE0F /* Debug */,
+				8261C59524FCCAE200FCFE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8261C59624FCCAE200FCFE0F /* Build configuration list for PBXNativeTarget "ClericApp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8261C59724FCCAE200FCFE0F /* Debug */,
+				8261C59824FCCAE200FCFE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8261C59924FCCAE200FCFE0F /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8261C59A24FCCAE200FCFE0F /* Debug */,
+				8261C59B24FCCAE200FCFE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8261C59C24FCCAE200FCFE0F /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8261C59D24FCCAE200FCFE0F /* Debug */,
+				8261C59E24FCCAE200FCFE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8261C59F24FCCC4D00FCFE0F /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8261C5A024FCCC4D00FCFE0F /* CareKitFHIR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8261C59F24FCCC4D00FCFE0F /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitFHIR;
+		};
+		8261C5A224FCCC4D00FCFE0F /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8261C59F24FCCC4D00FCFE0F /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		8261C5A424FCCC4D00FCFE0F /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8261C59F24FCCC4D00FCFE0F /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+		8261C5A624FCCC4D00FCFE0F /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8261C59F24FCCC4D00FCFE0F /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8261C55D24FCCAE100FCFE0F /* Project object */;
+}

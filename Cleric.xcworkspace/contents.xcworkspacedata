@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:ClericApp"
+      name = "ClericApp">
+      <Group
+         location = "group:macOS"
+         name = "macOS">
+         <FileRef
+            location = "group:macOS.entitlements">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Tests iOS"
+         name = "Tests iOS">
+         <FileRef
+            location = "group:Tests_iOS.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Shared"
+         name = "Shared">
+         <FileRef
+            location = "group:ClericAppApp.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:AccentColor.colorset"
+               name = "AccentColor.colorset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ContentView.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:ClericApp.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:iOS"
+         name = "iOS">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Tests macOS"
+         name = "Tests macOS">
+         <FileRef
+            location = "group:Tests_macOS.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
