@@ -1,8 +1,8 @@
 //
-//  SceneDelegate.swift
+//  DefaultSceneDelegate.swift
 //  ClericApp
 //
-//  Created by Jason Bice on 9/03/20.
+//  Created by Jason Bice on 9/04/20.
 //
 
 import CareKit
@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
 
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! DefaultAppDelegate
         let manager = appDelegate.synchronizedStoreManager!
         let careViewController = UINavigationController(rootViewController: TempViewController(storeManager: manager))
         

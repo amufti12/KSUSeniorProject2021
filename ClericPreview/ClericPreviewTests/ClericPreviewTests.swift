@@ -1,14 +1,14 @@
 //
-//  ClericTests.swift
-//  ClericTests
+//  ClericPreviewTests.swift
+//  ClericPreviewTests
 //
 //  Created by Jason Bice on 9/16/20.
 //
 
 import XCTest
-@testable import Cleric
+@testable import ClericPreview
 
-class ClericTests: XCTestCase {
+class ClericPreviewTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

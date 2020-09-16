@@ -1,6 +1,6 @@
 //
-//  ClericDelegate.swift
-//  ClericApp
+//  DefaultAppDelegate.swift
+//  ClericPreview
 //
 //  Created by Jason Bice on 9/03/20.
 //
@@ -12,9 +12,9 @@ import UIKit
 import HealthKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class DefaultAppDelegate: UIResponder, UIApplicationDelegate {
     
-    let careDataStore = OCKStore(name: "ClericMainStore", type: .onDisk)
+    let coreDataStore = OCKStore(name: "ClericMainStore", type: .onDisk)
     let healthKitStore = OCKHealthKitPassthroughStore(name: "ClericHealthKitPassthroughStore", type: .onDisk)
     private(set) var synchronizedStoreManager: OCKSynchronizedStoreManager!
     

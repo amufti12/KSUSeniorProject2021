@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:../CareKit">
+   </FileRef>
    <Group
-      location = "group:Cleric"
-      name = "Cleric">
+      location = "group:ClericPreview"
+      name = "ClericPreview">
+      <FileRef
+         location = "group:ClericPreview.xcodeproj">
+      </FileRef>
       <Group
-         location = "group:Cleric"
-         name = "Cleric">
+         location = "group:ClericPreview"
+         name = "ClericPreview">
          <FileRef
-            location = "group:Persistence.swift">
-         </FileRef>
-         <FileRef
-            location = "group:Cleric.xcdatamodeld">
+            location = "group:ClericPreviewApp.swift">
          </FileRef>
          <Group
             location = "group:Assets.xcassets"
@@ -34,9 +37,6 @@
                location = "group:Contents.json">
             </FileRef>
          </Group>
-         <FileRef
-            location = "group:ClericApp.swift">
-         </FileRef>
          <Group
             location = "group:Preview Content"
             name = "Preview Content">
@@ -55,24 +55,21 @@
             location = "group:Info.plist">
          </FileRef>
       </Group>
-      <FileRef
-         location = "group:Cleric.xcodeproj">
-      </FileRef>
       <Group
-         location = "group:ClericUITests"
-         name = "ClericUITests">
+         location = "group:ClericPreviewTests"
+         name = "ClericPreviewTests">
          <FileRef
-            location = "group:ClericUITests.swift">
+            location = "group:ClericPreviewTests.swift">
          </FileRef>
          <FileRef
             location = "group:Info.plist">
          </FileRef>
       </Group>
       <Group
-         location = "group:ClericTests"
-         name = "ClericTests">
+         location = "group:ClericPreviewUITests"
+         name = "ClericPreviewUITests">
          <FileRef
-            location = "group:ClericTests.swift">
+            location = "group:ClericPreviewUITests.swift">
          </FileRef>
          <FileRef
             location = "group:Info.plist">

@@ -11,6 +11,18 @@ import CareKit
 import CareKitStore
 import SwiftUI
 
+struct PageViewController: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> OCKDailyPageViewController {
+        let view = TempViewController(storeManager: StoreReferenceManager().synchronizedStoreManager)
+        return view
+    }
+    
+    func updateUIViewController(_ uiViewController: OCKDailyPageViewController, context: Context) {
+        //TODO
+    }
+    
+}
+
 final class TempViewController: OCKDailyPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +33,11 @@ final class TempViewController: OCKDailyPageViewController {
     @objc private func presentFamilyProfiles() {
         //TODO - Create View controller for holding multiple family member profiles.
     }
+    
 }
 
 struct TempViewController_Previews: PreviewProvider {
     static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+        PageViewController() 
     }
 }
