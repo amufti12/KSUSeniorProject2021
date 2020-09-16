@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82C4B2F32512769F007669EC /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4B2F22512769F007669EC /* TempViewController.swift */; };
+		82F80E512512713B00D835C7 /* ClericApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F80E502512713B00D835C7 /* ClericApp.swift */; };
+		82F80E532512713B00D835C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F80E522512713B00D835C7 /* ContentView.swift */; };
+		82F80E552512713B00D835C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F80E542512713B00D835C7 /* Assets.xcassets */; };
+		82F80E582512713B00D835C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F80E572512713B00D835C7 /* Preview Assets.xcassets */; };
+		82F80E5A2512713B00D835C7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F80E592512713B00D835C7 /* Persistence.swift */; };
+		82F80E5D2512713B00D835C7 /* Cleric.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82F80E5B2512713B00D835C7 /* Cleric.xcdatamodeld */; };
+		82F80E682512713C00D835C7 /* ClericTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F80E672512713C00D835C7 /* ClericTests.swift */; };
+		82F80E732512713C00D835C7 /* ClericUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F80E722512713C00D835C7 /* ClericUITests.swift */; };
+		82F80E82251273A400D835C7 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 82F80E81251273A400D835C7 /* CareKitFHIR */; };
+		82F80E84251273A400D835C7 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 82F80E83251273A400D835C7 /* CareKit */; };
+		82F80E86251273A400D835C7 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 82F80E85251273A400D835C7 /* CareKitStore */; };
+		82F80E88251273A400D835C7 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 82F80E87251273A400D835C7 /* CareKitUI */; };
+		82F80E8A2512749500D835C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F80E892512749500D835C7 /* AppDelegate.swift */; };
+		82F80E8C251274E400D835C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F80E8B251274E400D835C7 /* SceneDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82F80E642512713C00D835C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F80E452512713B00D835C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82F80E4C2512713B00D835C7;
+			remoteInfo = Cleric;
+		};
+		82F80E6F2512713C00D835C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F80E452512713B00D835C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82F80E4C2512713B00D835C7;
+			remoteInfo = Cleric;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82C4B2F22512769F007669EC /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
+		82F80E4D2512713B00D835C7 /* Cleric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F80E502512713B00D835C7 /* ClericApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClericApp.swift; sourceTree = "<group>"; };
+		82F80E522512713B00D835C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82F80E542512713B00D835C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82F80E572512713B00D835C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82F80E592512713B00D835C7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		82F80E5C2512713B00D835C7 /* Cleric.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cleric.xcdatamodel; sourceTree = "<group>"; };
+		82F80E5E2512713B00D835C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F80E632512713C00D835C7 /* ClericTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClericTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F80E672512713C00D835C7 /* ClericTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClericTests.swift; sourceTree = "<group>"; };
+		82F80E692512713C00D835C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F80E6E2512713C00D835C7 /* ClericUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClericUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F80E722512713C00D835C7 /* ClericUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClericUITests.swift; sourceTree = "<group>"; };
+		82F80E742512713C00D835C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F80E892512749500D835C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82F80E8B251274E400D835C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82F80E4A2512713B00D835C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F80E84251273A400D835C7 /* CareKit in Frameworks */,
+				82F80E82251273A400D835C7 /* CareKitFHIR in Frameworks */,
+				82F80E88251273A400D835C7 /* CareKitUI in Frameworks */,
+				82F80E86251273A400D835C7 /* CareKitStore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F80E602512713C00D835C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F80E6B2512713C00D835C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82F80E442512713B00D835C7 = {
+			isa = PBXGroup;
+			children = (
+				82F80E4F2512713B00D835C7 /* Cleric */,
+				82F80E662512713C00D835C7 /* ClericTests */,
+				82F80E712512713C00D835C7 /* ClericUITests */,
+				82F80E4E2512713B00D835C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82F80E4E2512713B00D835C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82F80E4D2512713B00D835C7 /* Cleric.app */,
+				82F80E632512713C00D835C7 /* ClericTests.xctest */,
+				82F80E6E2512713C00D835C7 /* ClericUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82F80E4F2512713B00D835C7 /* Cleric */ = {
+			isa = PBXGroup;
+			children = (
+				82F80E502512713B00D835C7 /* ClericApp.swift */,
+				82F80E522512713B00D835C7 /* ContentView.swift */,
+				82F80E542512713B00D835C7 /* Assets.xcassets */,
+				82F80E592512713B00D835C7 /* Persistence.swift */,
+				82F80E892512749500D835C7 /* AppDelegate.swift */,
+				82F80E8B251274E400D835C7 /* SceneDelegate.swift */,
+				82C4B2F22512769F007669EC /* TempViewController.swift */,
+				82F80E5E2512713B00D835C7 /* Info.plist */,
+				82F80E5B2512713B00D835C7 /* Cleric.xcdatamodeld */,
+				82F80E562512713B00D835C7 /* Preview Content */,
+			);
+			path = Cleric;
+			sourceTree = "<group>";
+		};
+		82F80E562512713B00D835C7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				82F80E572512713B00D835C7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82F80E662512713C00D835C7 /* ClericTests */ = {
+			isa = PBXGroup;
+			children = (
+				82F80E672512713C00D835C7 /* ClericTests.swift */,
+				82F80E692512713C00D835C7 /* Info.plist */,
+			);
+			path = ClericTests;
+			sourceTree = "<group>";
+		};
+		82F80E712512713C00D835C7 /* ClericUITests */ = {
+			isa = PBXGroup;
+			children = (
+				82F80E722512713C00D835C7 /* ClericUITests.swift */,
+				82F80E742512713C00D835C7 /* Info.plist */,
+			);
+			path = ClericUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82F80E4C2512713B00D835C7 /* Cleric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F80E772512713C00D835C7 /* Build configuration list for PBXNativeTarget "Cleric" */;
+			buildPhases = (
+				82F80E492512713B00D835C7 /* Sources */,
+				82F80E4A2512713B00D835C7 /* Frameworks */,
+				82F80E4B2512713B00D835C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cleric;
+			packageProductDependencies = (
+				82F80E81251273A400D835C7 /* CareKitFHIR */,
+				82F80E83251273A400D835C7 /* CareKit */,
+				82F80E85251273A400D835C7 /* CareKitStore */,
+				82F80E87251273A400D835C7 /* CareKitUI */,
+			);
+			productName = Cleric;
+			productReference = 82F80E4D2512713B00D835C7 /* Cleric.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82F80E622512713C00D835C7 /* ClericTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F80E7A2512713C00D835C7 /* Build configuration list for PBXNativeTarget "ClericTests" */;
+			buildPhases = (
+				82F80E5F2512713C00D835C7 /* Sources */,
+				82F80E602512713C00D835C7 /* Frameworks */,
+				82F80E612512713C00D835C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82F80E652512713C00D835C7 /* PBXTargetDependency */,
+			);
+			name = ClericTests;
+			productName = ClericTests;
+			productReference = 82F80E632512713C00D835C7 /* ClericTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82F80E6D2512713C00D835C7 /* ClericUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F80E7D2512713C00D835C7 /* Build configuration list for PBXNativeTarget "ClericUITests" */;
+			buildPhases = (
+				82F80E6A2512713C00D835C7 /* Sources */,
+				82F80E6B2512713C00D835C7 /* Frameworks */,
+				82F80E6C2512713C00D835C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82F80E702512713C00D835C7 /* PBXTargetDependency */,
+			);
+			name = ClericUITests;
+			productName = ClericUITests;
+			productReference = 82F80E6E2512713C00D835C7 /* ClericUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82F80E452512713B00D835C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					82F80E4C2512713B00D835C7 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					82F80E622512713C00D835C7 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 82F80E4C2512713B00D835C7;
+					};
+					82F80E6D2512713C00D835C7 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 82F80E4C2512713B00D835C7;
+					};
+				};
+			};
+			buildConfigurationList = 82F80E482512713B00D835C7 /* Build configuration list for PBXProject "Cleric" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82F80E442512713B00D835C7;
+			packageReferences = (
+				82F80E80251273A400D835C7 /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
+			productRefGroup = 82F80E4E2512713B00D835C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82F80E4C2512713B00D835C7 /* Cleric */,
+				82F80E622512713C00D835C7 /* ClericTests */,
+				82F80E6D2512713C00D835C7 /* ClericUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82F80E4B2512713B00D835C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F80E582512713B00D835C7 /* Preview Assets.xcassets in Resources */,
+				82F80E552512713B00D835C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F80E612512713C00D835C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F80E6C2512713C00D835C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82F80E492512713B00D835C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F80E5A2512713B00D835C7 /* Persistence.swift in Sources */,
+				82F80E5D2512713B00D835C7 /* Cleric.xcdatamodeld in Sources */,
+				82C4B2F32512769F007669EC /* TempViewController.swift in Sources */,
+				82F80E532512713B00D835C7 /* ContentView.swift in Sources */,
+				82F80E8A2512749500D835C7 /* AppDelegate.swift in Sources */,
+				82F80E512512713B00D835C7 /* ClericApp.swift in Sources */,
+				82F80E8C251274E400D835C7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F80E5F2512713C00D835C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F80E682512713C00D835C7 /* ClericTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F80E6A2512713C00D835C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F80E732512713C00D835C7 /* ClericUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82F80E652512713C00D835C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82F80E4C2512713B00D835C7 /* Cleric */;
+			targetProxy = 82F80E642512713C00D835C7 /* PBXContainerItemProxy */;
+		};
+		82F80E702512713C00D835C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82F80E4C2512713B00D835C7 /* Cleric */;
+			targetProxy = 82F80E6F2512713C00D835C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		82F80E752512713C00D835C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82F80E762512713C00D835C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82F80E782512713C00D835C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cleric/Preview Content\"";
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Cleric/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.Cleric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82F80E792512713C00D835C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cleric/Preview Content\"";
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Cleric/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.Cleric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82F80E7B2512713C00D835C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				INFOPLIST_FILE = ClericTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.ClericTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cleric.app/Cleric";
+			};
+			name = Debug;
+		};
+		82F80E7C2512713C00D835C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				INFOPLIST_FILE = ClericTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.ClericTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cleric.app/Cleric";
+			};
+			name = Release;
+		};
+		82F80E7E2512713C00D835C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				INFOPLIST_FILE = ClericUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.ClericUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cleric;
+			};
+			name = Debug;
+		};
+		82F80E7F2512713C00D835C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXZC9X83B6;
+				INFOPLIST_FILE = ClericUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seniorproject.ClericUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cleric;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82F80E482512713B00D835C7 /* Build configuration list for PBXProject "Cleric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F80E752512713C00D835C7 /* Debug */,
+				82F80E762512713C00D835C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82F80E772512713C00D835C7 /* Build configuration list for PBXNativeTarget "Cleric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F80E782512713C00D835C7 /* Debug */,
+				82F80E792512713C00D835C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82F80E7A2512713C00D835C7 /* Build configuration list for PBXNativeTarget "ClericTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F80E7B2512713C00D835C7 /* Debug */,
+				82F80E7C2512713C00D835C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82F80E7D2512713C00D835C7 /* Build configuration list for PBXNativeTarget "ClericUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F80E7E2512713C00D835C7 /* Debug */,
+				82F80E7F2512713C00D835C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82F80E80251273A400D835C7 /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82F80E81251273A400D835C7 /* CareKitFHIR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F80E80251273A400D835C7 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitFHIR;
+		};
+		82F80E83251273A400D835C7 /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F80E80251273A400D835C7 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		82F80E85251273A400D835C7 /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F80E80251273A400D835C7 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+		82F80E87251273A400D835C7 /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F80E80251273A400D835C7 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		82F80E5B2512713B00D835C7 /* Cleric.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82F80E5C2512713B00D835C7 /* Cleric.xcdatamodel */,
+			);
+			currentVersion = 82F80E5C2512713B00D835C7 /* Cleric.xcdatamodel */;
+			path = Cleric.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82F80E452512713B00D835C7 /* Project object */;
+}
