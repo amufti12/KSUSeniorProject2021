@@ -63,10 +63,20 @@ struct OCKDynamicTask_Preview: PreviewProvider {
     }
 }*/
 
-class OCKDynamicTask: ObservableObject, Equatable, Identifiable {
-    let id = UUID()
-    static func == (lhs: OCKDynamicTask, rhs: OCKDynamicTask) -> Bool {
+public class OCKDynamicTask: ObservableObject, Equatable, Identifiable {
+    //Making the class confrom to Equatable and Identifiable
+    public static func == (lhs: OCKDynamicTask, rhs: OCKDynamicTask) -> Bool {
         return lhs.id == rhs.id
     }
+    public let title: String
+    public let id: UUID
     
+    init(title: String, id: UUID) {
+        self.title = title
+        self.id = UUID()
+    }
+    
+    func dynamicAction() {
+        fatalError("Must Override Function")
+    }
 }
