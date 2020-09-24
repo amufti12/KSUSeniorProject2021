@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821214C9251CF1B80017F4A8 /* DynamicSimpleInstructionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821214C8251CF1B80017F4A8 /* DynamicSimpleInstructionTask.swift */; };
 		8237D2932518F56C00FD0897 /* OCKDynamicTaskPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D2922518F56C00FD0897 /* OCKDynamicTaskPageView.swift */; };
 		8237D29D2519099B00FD0897 /* OCKDynamicTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */; };
 		8237D2AD251922BD00FD0897 /* OCKDynamicTaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D2AC251922BD00FD0897 /* OCKDynamicTaskContentView.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		821214C8251CF1B80017F4A8 /* DynamicSimpleInstructionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSimpleInstructionTask.swift; sourceTree = "<group>"; };
 		8237D2922518F56C00FD0897 /* OCKDynamicTaskPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicTaskPageView.swift; sourceTree = "<group>"; };
 		8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicTask.swift; sourceTree = "<group>"; };
 		8237D2AC251922BD00FD0897 /* OCKDynamicTaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicTaskContentView.swift; sourceTree = "<group>"; };
@@ -135,12 +137,13 @@
 				82C4B30625127AE0007669EC /* Preview Content */,
 				8237D2922518F56C00FD0897 /* OCKDynamicTaskPageView.swift */,
 				8248EB7325157E19004605FC /* OCKTaskGroupBucketView.swift */,
-				8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */,
 				8237D2AC251922BD00FD0897 /* OCKDynamicTaskContentView.swift */,
 				8237D2B12519298400FD0897 /* SimpleInstructionTask.swift */,
 				82DBF5A925152802005C6F75 /* OCKTaskFillBoxView.swift */,
 				82C4F49425197523002555B0 /* OCKTaskGroupBucket.swift */,
 				8248EB7125157942004605FC /* OCKTaskGroup.swift */,
+				821214C8251CF1B80017F4A8 /* DynamicSimpleInstructionTask.swift */,
+				8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */,
 			);
 			path = ClericPreview;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				82C4B33D2512879F007669EC /* DefaultSceneDelegate.swift in Sources */,
 				8237D29D2519099B00FD0897 /* OCKDynamicTask.swift in Sources */,
 				82DBF5AA25152802005C6F75 /* OCKTaskFillBoxView.swift in Sources */,
+				821214C9251CF1B80017F4A8 /* DynamicSimpleInstructionTask.swift in Sources */,
 				8237D2AD251922BD00FD0897 /* OCKDynamicTaskContentView.swift in Sources */,
 				82C4B30325127ADF007669EC /* ContentView.swift in Sources */,
 			);

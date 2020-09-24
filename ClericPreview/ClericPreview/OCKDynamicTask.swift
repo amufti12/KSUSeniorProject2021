@@ -69,14 +69,16 @@ public class OCKDynamicTask: ObservableObject, Equatable, Identifiable {
         return lhs.id == rhs.id
     }
     public let title: String
+    public var generatesTask: Bool
     public let id: UUID
     
-    init(title: String, id: UUID) {
+    init(title: String, generatesTask: Bool, id: UUID) {
         self.title = title
+        self.generatesTask = generatesTask
         self.id = UUID()
     }
     
-    func dynamicAction() {
+    func dynamicAction() -> OCKDynamicTask? {
         fatalError("Must Override Function")
     }
 }
