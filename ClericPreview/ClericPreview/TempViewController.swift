@@ -38,6 +38,6 @@ final class TempViewController: OCKDailyPageViewController {
 
 struct TempViewController_Previews: PreviewProvider {
     static var previews: some View {
-        PageViewController() 
+        PageViewController()
     }
 }

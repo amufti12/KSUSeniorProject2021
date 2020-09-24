@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8237D2932518F56C00FD0897 /* OCKDynamicTaskPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D2922518F56C00FD0897 /* OCKDynamicTaskPageView.swift */; };
+		8237D29D2519099B00FD0897 /* OCKDynamicTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */; };
+		8237D2AD251922BD00FD0897 /* OCKDynamicTaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D2AC251922BD00FD0897 /* OCKDynamicTaskContentView.swift */; };
+		8237D2B22519298400FD0897 /* SimpleInstructionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D2B12519298400FD0897 /* SimpleInstructionTask.swift */; };
+		8248EB7225157942004605FC /* OCKTaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248EB7125157942004605FC /* OCKTaskGroup.swift */; };
+		8248EB7425157E19004605FC /* OCKTaskGroupBucketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248EB7325157E19004605FC /* OCKTaskGroupBucketView.swift */; };
 		82C4B30325127ADF007669EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4B30225127ADF007669EC /* ContentView.swift */; };
 		82C4B30525127AE0007669EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C4B30425127AE0007669EC /* Assets.xcassets */; };
 		82C4B30825127AE0007669EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C4B30725127AE0007669EC /* Preview Assets.xcassets */; };
@@ -20,7 +26,8 @@
 		82C4B3442512963F007669EC /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 82C4B3432512963F007669EC /* CareKit */; };
 		82C4B3462512963F007669EC /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 82C4B3452512963F007669EC /* CareKitStore */; };
 		82C4B3482512963F007669EC /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 82C4B3472512963F007669EC /* CareKitUI */; };
-		82C4B34A2513D55F007669EC /* OCKFillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4B3492513D55F007669EC /* OCKFillButton.swift */; };
+		82C4F49525197523002555B0 /* OCKTaskGroupBucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4F49425197523002555B0 /* OCKTaskGroupBucket.swift */; };
+		82DBF5AA25152802005C6F75 /* OCKTaskFillBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBF5A925152802005C6F75 /* OCKTaskFillBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8237D2922518F56C00FD0897 /* OCKDynamicTaskPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicTaskPageView.swift; sourceTree = "<group>"; };
+		8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicTask.swift; sourceTree = "<group>"; };
+		8237D2AC251922BD00FD0897 /* OCKDynamicTaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicTaskContentView.swift; sourceTree = "<group>"; };
+		8237D2B12519298400FD0897 /* SimpleInstructionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleInstructionTask.swift; sourceTree = "<group>"; };
+		8248EB7125157942004605FC /* OCKTaskGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKTaskGroup.swift; sourceTree = "<group>"; };
+		8248EB7325157E19004605FC /* OCKTaskGroupBucketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKTaskGroupBucketView.swift; sourceTree = "<group>"; };
 		82C4B2FD25127ADF007669EC /* ClericPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClericPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C4B30225127ADF007669EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82C4B30425127AE0007669EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +69,8 @@
 		82C4B33A25128515007669EC /* StoreReferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreReferenceManager.swift; sourceTree = "<group>"; };
 		82C4B33C2512879F007669EC /* DefaultSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSceneDelegate.swift; sourceTree = "<group>"; };
 		82C4B33E25128899007669EC /* DefaultAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppDelegate.swift; sourceTree = "<group>"; };
-		82C4B3492513D55F007669EC /* OCKFillButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OCKFillButton.swift; path = "../../../CK-Swift/CareKit/CareKitUI/CareKitUI/iOS/WIP/OCKFillButton.swift"; sourceTree = "<group>"; };
+		82C4F49425197523002555B0 /* OCKTaskGroupBucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKTaskGroupBucket.swift; sourceTree = "<group>"; };
+		82DBF5A925152802005C6F75 /* OCKTaskFillBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKTaskFillBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +125,6 @@
 		82C4B2FF25127ADF007669EC /* ClericPreview */ = {
 			isa = PBXGroup;
 			children = (
-				82C4B3492513D55F007669EC /* OCKFillButton.swift */,
 				82C4B30225127ADF007669EC /* ContentView.swift */,
 				82C4B32D25127B28007669EC /* TempViewController.swift */,
 				82C4B33A25128515007669EC /* StoreReferenceManager.swift */,
@@ -120,6 +133,14 @@
 				82C4B30425127AE0007669EC /* Assets.xcassets */,
 				82C4B30925127AE0007669EC /* Info.plist */,
 				82C4B30625127AE0007669EC /* Preview Content */,
+				8237D2922518F56C00FD0897 /* OCKDynamicTaskPageView.swift */,
+				8248EB7325157E19004605FC /* OCKTaskGroupBucketView.swift */,
+				8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */,
+				8237D2AC251922BD00FD0897 /* OCKDynamicTaskContentView.swift */,
+				8237D2B12519298400FD0897 /* SimpleInstructionTask.swift */,
+				82DBF5A925152802005C6F75 /* OCKTaskFillBoxView.swift */,
+				82C4F49425197523002555B0 /* OCKTaskGroupBucket.swift */,
+				8248EB7125157942004605FC /* OCKTaskGroup.swift */,
 			);
 			path = ClericPreview;
 			sourceTree = "<group>";
@@ -288,11 +309,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82C4B34A2513D55F007669EC /* OCKFillButton.swift in Sources */,
 				82C4B32F25127B28007669EC /* TempViewController.swift in Sources */,
 				82C4B33B25128515007669EC /* StoreReferenceManager.swift in Sources */,
+				8248EB7225157942004605FC /* OCKTaskGroup.swift in Sources */,
+				8237D2B22519298400FD0897 /* SimpleInstructionTask.swift in Sources */,
 				82C4B33F25128899007669EC /* DefaultAppDelegate.swift in Sources */,
+				82C4F49525197523002555B0 /* OCKTaskGroupBucket.swift in Sources */,
+				8237D2932518F56C00FD0897 /* OCKDynamicTaskPageView.swift in Sources */,
+				8248EB7425157E19004605FC /* OCKTaskGroupBucketView.swift in Sources */,
 				82C4B33D2512879F007669EC /* DefaultSceneDelegate.swift in Sources */,
+				8237D29D2519099B00FD0897 /* OCKDynamicTask.swift in Sources */,
+				82DBF5AA25152802005C6F75 /* OCKTaskFillBoxView.swift in Sources */,
+				8237D2AD251922BD00FD0897 /* OCKDynamicTaskContentView.swift in Sources */,
 				82C4B30325127ADF007669EC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
