@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		821214C9251CF1B80017F4A8 /* DynamicSimpleInstructionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821214C8251CF1B80017F4A8 /* DynamicSimpleInstructionTask.swift */; };
+		821214D1251D063E0017F4A8 /* OCKTaskGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821214D0251D063E0017F4A8 /* OCKTaskGenerator.swift */; };
+		821214D6251D07D20017F4A8 /* OCKDynamicSimpleInstructionTaskGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821214D5251D07D20017F4A8 /* OCKDynamicSimpleInstructionTaskGenerator.swift */; };
 		8237D2932518F56C00FD0897 /* OCKDynamicTaskPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D2922518F56C00FD0897 /* OCKDynamicTaskPageView.swift */; };
 		8237D29D2519099B00FD0897 /* OCKDynamicTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */; };
 		8237D2AD251922BD00FD0897 /* OCKDynamicTaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237D2AC251922BD00FD0897 /* OCKDynamicTaskContentView.swift */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		821214C8251CF1B80017F4A8 /* DynamicSimpleInstructionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSimpleInstructionTask.swift; sourceTree = "<group>"; };
+		821214D0251D063E0017F4A8 /* OCKTaskGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKTaskGenerator.swift; sourceTree = "<group>"; };
+		821214D5251D07D20017F4A8 /* OCKDynamicSimpleInstructionTaskGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicSimpleInstructionTaskGenerator.swift; sourceTree = "<group>"; };
 		8237D2922518F56C00FD0897 /* OCKDynamicTaskPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicTaskPageView.swift; sourceTree = "<group>"; };
 		8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicTask.swift; sourceTree = "<group>"; };
 		8237D2AC251922BD00FD0897 /* OCKDynamicTaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDynamicTaskContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				8248EB7125157942004605FC /* OCKTaskGroup.swift */,
 				821214C8251CF1B80017F4A8 /* DynamicSimpleInstructionTask.swift */,
 				8237D29C2519099B00FD0897 /* OCKDynamicTask.swift */,
+				821214D0251D063E0017F4A8 /* OCKTaskGenerator.swift */,
+				821214D5251D07D20017F4A8 /* OCKDynamicSimpleInstructionTaskGenerator.swift */,
 			);
 			path = ClericPreview;
 			sourceTree = "<group>";
@@ -313,7 +319,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C4B32F25127B28007669EC /* TempViewController.swift in Sources */,
+				821214D6251D07D20017F4A8 /* OCKDynamicSimpleInstructionTaskGenerator.swift in Sources */,
 				82C4B33B25128515007669EC /* StoreReferenceManager.swift in Sources */,
+				821214D1251D063E0017F4A8 /* OCKTaskGenerator.swift in Sources */,
 				8248EB7225157942004605FC /* OCKTaskGroup.swift in Sources */,
 				8237D2B22519298400FD0897 /* SimpleInstructionTask.swift in Sources */,
 				82C4B33F25128899007669EC /* DefaultAppDelegate.swift in Sources */,
