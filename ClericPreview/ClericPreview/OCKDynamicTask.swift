@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+/*
 public struct OCKDynamicTask<Content: View>: View {
     public var title: String
     public var subTitle: String?
@@ -61,4 +61,12 @@ struct OCKDynamicTask_Preview: PreviewProvider {
     var Previews: some View {
         OCKDynamicTask_Preview.previews
     }
+}*/
+
+class OCKDynamicTask: ObservableObject, Equatable, Identifiable {
+    let id = UUID()
+    static func == (lhs: OCKDynamicTask, rhs: OCKDynamicTask) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
 }

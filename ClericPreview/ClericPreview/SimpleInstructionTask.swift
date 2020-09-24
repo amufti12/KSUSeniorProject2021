@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+/*
 struct SimpleInstructionTask: View {
     var instructionText: String?
     var incompleteLabel: String = "Mark as Complete"
@@ -43,4 +43,4 @@ struct SimpleInstructionTask_Preview: PreviewProvider {
     var Previews: some View {
         SimpleInstructionTask_Preview.previews
     }
-}
+}*/

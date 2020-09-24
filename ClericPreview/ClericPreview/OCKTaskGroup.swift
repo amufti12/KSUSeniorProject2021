@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Foundation
-
+/*
 @available(iOS 14, *)
 public class OCKTaskGroup: ObservableObject, Equatable, Identifiable {
     public static func == (lhs: OCKTaskGroup, rhs: OCKTaskGroup) -> Bool {
@@ -19,9 +19,7 @@ public class OCKTaskGroup: ObservableObject, Equatable, Identifiable {
     let completeAll: Bool?
     @Published var taskTotal: Int
     @Published var taskComplete: Int?
-    let taskData: Bool?
-    let dataManager: Bool?
-    var taskList: [OCKDynamicTask<SimpleInstructionTask>?]
+    var taskList: [OCKDynamicTask<some View>]
     public let id: UUID
     
     init(
@@ -29,12 +27,8 @@ public class OCKTaskGroup: ObservableObject, Equatable, Identifiable {
         completeAll: Bool? = nil,
         taskTotal: Int? = nil,
         taskComplete: Int? = nil,
-        //Task Data and dataManager will have their own data type coming from a data store.
-        //Data store details dependant on task implementation (Standard Task cards grouped, or from in development tool)
-        taskData: Bool? = nil,
-        dataManager: Bool? = nil,
         //TODO - Solution for when this needs to be multiple task types.
-        taskList: [OCKDynamicTask<SimpleInstructionTask>?] = [nil])
+        taskList: [OCKDynamicTask]
     {
         
         self.completeAll = completeAll
@@ -81,4 +75,4 @@ public class OCKTaskGroup: ObservableObject, Equatable, Identifiable {
     func removeTask() {
         //TODO - similar to above but removes a task from a group. 
     }
-}
+}*/
