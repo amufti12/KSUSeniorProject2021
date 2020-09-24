@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Foundation
-
+/*
 @available(iOS 14, *)
 public class OCKTaskGroup: ObservableObject, Equatable, Identifiable {
     public static func == (lhs: OCKTaskGroup, rhs: OCKTaskGroup) -> Bool {
@@ -81,4 +81,42 @@ public class OCKTaskGroup: ObservableObject, Equatable, Identifiable {
     func removeTask() {
         //TODO - similar to above but removes a task from a group. 
     }
+}*/
+
+public class OCKTaskGroup: ObservableObject {
+    @Published var taskList: [AnyView]
+    @Published var taskTotal: Int
+    @Published var taskComplete: Int
+    @Published var percentComplete: CGFloat = 0
+    
+    init(taskList: [AnyView]) {
+        self.taskList = taskList
+        self.taskTotal = taskList.count
+        self.taskComplete = 0
+        self.percentComplete = completionPercentage()
+    }
+    
+    func completionPercentage() -> CGFloat {
+        let percent = CGFloat((Double(taskComplete) / Double(taskTotal)) * 50)
+        return percent
+    }
+    
+    func completeTask() {
+        if self.taskComplete < self.taskTotal {
+            self.taskComplete += 1
+            self.percentComplete = completionPercentage()
+        }
+    }
+    
+    func reduceCompleteTaskCount() {
+        if self.taskComplete > 0 && self.taskComplete <= self.taskTotal {
+            self.taskComplete -= 1
+            self.percentComplete = completionPercentage()
+        }
+    }
+    
+    func addTask(_ someTaskView: AnyView) {
+        self.taskList.append(someTaskView)
+    }
+    
 }
