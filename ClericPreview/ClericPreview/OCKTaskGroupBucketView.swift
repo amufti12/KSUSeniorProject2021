@@ -14,23 +14,27 @@ public struct OCKTaskGroupBucketView: View {
     var test = OCKTaskGroup(taskTotal: 6, taskComplete: 4)
     var test2 = OCKTaskGroup(taskTotal: 8, taskComplete: 3)
     var test3 = OCKTaskGroup(taskTotal: 2, taskComplete: 2)
+    @State var selectedTaskGroup: OCKTaskGroup? = nil
     
     public var body: some View {
         //var visibleTasks = taskGroupBucket.viewableTaskBucket!
         let testBucket = [test, test2, test3, test2, test]
         ZStack {
             RoundedRectangle(cornerRadius: 10).fill(Color(UIColor.systemGray6)).frame(maxWidth: 60, maxHeight: .infinity).shadow(radius: 2)
-            VStack {
-                Spacer()
-                Spacer()
-                ForEach(testBucket) {taskGroup in
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 100) {
                     Spacer()
-                    OCKTaskFillBoxView(taskGroup: taskGroup, borderColor: .green, interiorColor: .white)
+                    ForEach(testBucket) {taskGroup in
+                        
+                        Button(action: {selectedTaskGroup = taskGroup}, label: {
+                            OCKTaskFillBoxView(taskGroup: taskGroup, borderColor: .green, interiorColor: .white)
+                        })
+                        
+                    }
                     Spacer()
-                }
-                Spacer()
             }
-        }.frame(width: 60, height: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).ignoresSafeArea()
+            }
+        }.frame(width: 60, height: .infinity, alignment: .center).ignoresSafeArea()
     }
 }
 

@@ -17,9 +17,16 @@ struct OCKDynamicTaskPageView: View {
         NavigationView {
             HStack {
                 taskBucket
-                VStack {
-                OCKDynamicTask<SimpleInstructionTask>(title: "Example Task", subTitle: "Lorem Ipsum"){tempInstruction}
-                    OCKDynamicTask<SimpleInstructionTask>(title: "Example Task", subTitle: "Lorem Ipsum"){tempInstruction}
+                ScrollView (showsIndicators: false) {
+                    VStack {
+                        //replace with a For Each view iterating tasks in a TaskGroup
+                        OCKDynamicTask<SimpleInstructionTask>(title: "Example Task", subTitle: "Lorem Ipsum"){tempInstruction}
+                        OCKDynamicTask<SimpleInstructionTask>(title: "Example Task", subTitle: "Lorem Ipsum"){tempInstruction}
+                        OCKDynamicTask<SimpleInstructionTask>(title: "Example Task", subTitle: "Lorem Ipsum"){tempInstruction}
+                        OCKDynamicTask<SimpleInstructionTask>(title: "Example Task", subTitle: "Lorem Ipsum"){tempInstruction}
+                        OCKDynamicTask<SimpleInstructionTask>(title: "Example Task", subTitle: "Lorem Ipsum"){tempInstruction}
+                        OCKDynamicTask<SimpleInstructionTask>(title: "Example Task", subTitle: "Lorem Ipsum"){tempInstruction}
+                    }
                 }
             }.navigationBarTitle("Task Title", displayMode: .inline)
         }
