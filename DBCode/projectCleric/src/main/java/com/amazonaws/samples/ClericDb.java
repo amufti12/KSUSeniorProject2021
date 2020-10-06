@@ -29,6 +29,8 @@ import com.amazonaws.services.dynamodbv2.model.ScanResult;
 import com.amazonaws.services.dynamodbv2.model.TableDescription;
 import com.amazonaws.services.dynamodbv2.util.TableUtils;
 
+
+
 public class ClericDb {
 	//creates the connection to Dynamo
 	static AmazonDynamoDB dynamo;
@@ -48,9 +50,17 @@ public class ClericDb {
         
 	}
 	
+	//returns the number the id of a record that's about to be added
+	public static int calcItemID(String tablename) {
+		ScanRequest request = new ScanRequest().withTableName(tablename);
+		ScanResult count = dynamo.scan(request);
+		return count.getCount()+1;
+	}
 	//Adds an item to the specialty table
-	public static void addSpecialtyItem(int id, String description) {
+	public static void addSpecialtyItem(String description) {
+		String tablename = "Specialty";
 		Map<String, AttributeValue> item = new HashMap<String,AttributeValue>();
+		int id = calcItemID(tablename);
 		item.put("specialID", new AttributeValue().withN(Integer.toString(id)));
 		item.put("description", new AttributeValue(description));
 		PutItemRequest putItemRequest = new PutItemRequest("Specialty", item);
@@ -58,34 +68,35 @@ public class ClericDb {
         System.out.println("Result: " + putItemResult);
 	}
 	
-	//retrieves a specialty item from the specialty table leave parameters "","" for all items
+	//retrieves a specialty item from the specialty table
 	//currently does not work with ints looking into that
 	public static ScanResult getSpecialtyItems(String value,String condition) {
 		ScanRequest request;
-		if(!condition.isEmpty()) {
-			HashMap<String,AttributeValue> expression = new HashMap<String,AttributeValue>();
-			expression.put(":value", new AttributeValue().withS(value));
-			request = new ScanRequest()
-					.withTableName("Specialty")
-					.withFilterExpression(condition)
-					.withProjectionExpression("description")
-					.withExpressionAttributeValues(expression);
-		}
-		else {
-			request = new ScanRequest()
-					.withTableName("Specialty");
-		}
-		
+		HashMap<String,AttributeValue> expression = new HashMap<String,AttributeValue>();
+		expression.put(":value", new AttributeValue().withS(value));
+		request = new ScanRequest()
+				.withTableName("Specialty")
+				.withFilterExpression(condition)
+				.withProjectionExpression("description")
+				.withExpressionAttributeValues(expression);
 		ScanResult scanresult = dynamo.scan(request);
 		return scanresult;
 	}
+	
+	public static ScanResult getSpecialtyItems() {
+		ScanRequest request = new ScanRequest()
+				.withTableName("Specialty");
+		ScanResult scanresult = dynamo.scan(request);
+		return scanresult;
+	}
+	
 	//just used for testing purposes
 	 public static void main(String[] args){
 		 connect();
 		 //Testing purposes
-		 addSpecialtyItem(3,"TestSpecialty");
+		 addSpecialtyItem("TestSpecialty");
 		 System.out.println(getSpecialtyItems("Pediatric","description = :value"));
-		 System.out.println(getSpecialtyItems("",""));
+		 System.out.println(getSpecialtyItems());
 		 //working to see if there is a way to generalize where one method can query
 		 //almost anything from a table
 		 //still in progress
