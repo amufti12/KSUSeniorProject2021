@@ -5,6 +5,8 @@ import java.util.Map;
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.AWSStaticCredentialsProvider;
+import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
@@ -32,30 +34,46 @@ import com.amazonaws.services.dynamodbv2.document.DeleteItemOutcome;
 import com.amazonaws.services.dynamodbv2.document.DynamoDB;
 import com.amazonaws.services.dynamodbv2.document.Item;
 import com.amazonaws.services.dynamodbv2.document.Table;
-
+import com.amazonaws.auth.profile.ProfilesConfigFile;
 import com.amazonaws.services.dynamodbv2.document.UpdateItemOutcome;
 import com.amazonaws.services.dynamodbv2.document.spec.DeleteItemSpec;
 import com.amazonaws.services.dynamodbv2.document.spec.UpdateItemSpec;
 import com.amazonaws.services.dynamodbv2.document.utils.NameMap;
 import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
 import com.amazonaws.services.dynamodbv2.model.ReturnValue;
-import com.google.gson.*;
+//import com.google.gson.*;
 
 public class ClericDb {
 	//creates the connection to Dynamo
 	static AmazonDynamoDB dynamo;
 	
+	//C:\Users\Aydan Mufti\.aws\credentials
 	private static void connect() {
-		ProfileCredentialsProvider credentialsProvider = new ProfileCredentialsProvider();
-        try {
-            credentialsProvider.getCredentials();
-        } catch (Exception e) {
-            throw new AmazonClientException(
-                    "Cannot load the AWS Credentials",
-                    e);
-        }
+//		ProfileCredentialsProvider credentialsProvider = new ProfileCredentialsProvider();
+//        try {
+//            credentialsProvider.getCredentials();
+//        } catch (Exception e) {
+//            throw new AmazonClientException(
+//                    "Cannot load the AWS Credentials",e);
+//        }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//		ProfilesConfigFile configFile = new ProfilesConfigFile("/.aws/credentials");
+//		
+//		ProfileCredentialsProvider credentialsProvider = new ProfileCredentialsProvider(configFile, null);
+//        try {
+//            credentialsProvider.getCredentials();
+//        } catch (Exception e) {
+//            throw new AmazonClientException(
+//                    "Cannot load the AWS Credentials",e);
+//        }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////			
+		BasicAWSCredentials awsCreds = new BasicAWSCredentials("accesskey","secretthing");
+		
+		
+		
+		
         dynamo = AmazonDynamoDBClientBuilder.standard()
-            .withCredentials(credentialsProvider)
+            .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
             .withRegion("us-east-1")
             .build();
         
@@ -200,17 +218,17 @@ public class ClericDb {
 		 connect();
 		 //Testing purposes
 		 //addSpecialtyItem("TestSpecialty");
-		 //System.out.println(getSpecialtyItems("TestSpecialty","description = :value"));
-		 //System.out.println(getSpecialtyItems());
+		 System.out.println(getSpecialtyItems("TestSpecialty","description = :value"));
+		 System.out.println(getSpecialtyItems());
 		 //working to see if there is a way to generalize where one method can query
 		 //almost anything from a table
 		 //still in progress
-		 //System.out.println(getSpecialtyItems("2","specialID == :value"));
 		 //addPatientItem("jdoe1","password","123 Test Street", "John", "Doe",1,"Male","02/11/1991");
-		 //System.out.println(getPatientItems("John","firstName = :value"));
+		 System.out.println(getPatientItems("John","firstName = :value"));
 		 //addDoctorItem("delorean","88MPH","Emmett","Brown",1);
-		 //System.out.println(getDoctorItems("Emmett","firstName=:value"));
+		 System.out.println(getDoctorItems("Emmett","firstName=:value"));
 		 patientLogin("jdoe1","password");
+		 System.out.println(patientLogin("jdoe1","password"));
 		 dynamo.shutdown();
 		 
 	}
