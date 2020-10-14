@@ -2,6 +2,7 @@ package com.amazonaws.samples;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.auth.AWSCredentials;
@@ -41,13 +42,16 @@ import com.amazonaws.services.dynamodbv2.document.spec.UpdateItemSpec;
 import com.amazonaws.services.dynamodbv2.document.utils.NameMap;
 import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
 import com.amazonaws.services.dynamodbv2.model.ReturnValue;
-//import com.google.gson.*;
+import com.amazonaws.services.dynamodbv2.document.internal.InternalUtils;
+import com.google.gson.*;
+import com.google.gson.reflect.TypeToken;
+import java.lang.reflect.Type;
+//import org.json.*;
 
 public class ClericDb {
 	//creates the connection to Dynamo
 	static AmazonDynamoDB dynamo;
 	
-	//C:\Users\Aydan Mufti\.aws\credentials
 	private static void connect() {
 //		ProfileCredentialsProvider credentialsProvider = new ProfileCredentialsProvider();
 //        try {
@@ -67,9 +71,8 @@ public class ClericDb {
 //                    "Cannot load the AWS Credentials",e);
 //        }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////			
-		BasicAWSCredentials awsCreds = new BasicAWSCredentials("accesskey","secretthing");
-		
-		
+		BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIA3VQDHWSMIV52AF6H","ZlVESV2lgpWUPjDj1SBEycnwe3mddnCHn9zlhKtf\r\n" + 
+				"");
 		
 		
         dynamo = AmazonDynamoDBClientBuilder.standard()
@@ -101,7 +104,7 @@ public class ClericDb {
 	
 	//retrieves a specialty item from the specialty table
 	//currently does not work with ints looking into that
-	public static ScanResult getSpecialtyItems(String value,String condition) {
+	public static String getSpecialtyItems(String value,String condition) {
 		ScanRequest request;
 		HashMap<String,AttributeValue> expression = new HashMap<String,AttributeValue>();
 		expression.put(":value", new AttributeValue().withS(value));
@@ -111,14 +114,14 @@ public class ClericDb {
 				.withProjectionExpression("description")
 				.withExpressionAttributeValues(expression);
 		ScanResult scanresult = dynamo.scan(request);
-		return scanresult;
+		return createJson(scanresult.getItems());
 	}
 	
-	public static ScanResult getSpecialtyItems() {
+	public static String getSpecialtyItems() {
 		ScanRequest request = new ScanRequest()
 				.withTableName("Specialty");
 		ScanResult scanresult = dynamo.scan(request);
-		return scanresult;
+		return createJson(scanresult.getItems());
 	}
 	
 	//Adds an item to the patient table
@@ -143,13 +146,33 @@ public class ClericDb {
 	}
 	
 	public static boolean patientLogin(String username, String password) {
-		ScanResult item = getPatientItems(username,"username = :value");
-		return item.getItems().get(0).get("password").getS().equals(password);
+		HashMap<String,AttributeValue> expression = new HashMap<String,AttributeValue>();
+		expression.put(":value", new AttributeValue().withS(username));
+		ScanRequest request = new ScanRequest()
+				.withTableName("Patient")
+				.withFilterExpression("username = :value")
+				.withExpressionAttributeValues(expression);
+		ScanResult scanresult = dynamo.scan(request);
+		return scanresult.getItems().get(0).get("password").getS().equals(password);
+	}
 	
+	//converts the hash maps to output Json Strings
+	public static String createJson(List<Map<String, AttributeValue>> listOfMaps) {
+		List<Item> listOfItem = InternalUtils.toItemList(listOfMaps);
+		
+		String json = "";
+		for(int i = 0; i < listOfItem.size(); i++) {
+			Gson gson = new Gson();
+            Item item = listOfItem.get(i);
+
+            json += gson.toJson(item.asMap());
+            json += "\n";
+		}
+		return json;
 	}
 	
 	//retrieves a patient item from the Patient table
-	public static ScanResult getPatientItems(String value,String condition) {
+	public static String getPatientItems(String value,String condition) {
 		HashMap<String,AttributeValue> expression = new HashMap<String,AttributeValue>();
 		expression.put(":value", new AttributeValue().withS(value));
 		ScanRequest request = new ScanRequest()
@@ -157,13 +180,14 @@ public class ClericDb {
 				.withFilterExpression(condition)
 				.withExpressionAttributeValues(expression);
 		ScanResult scanresult = dynamo.scan(request);
-		return  scanresult;
+		
+		return createJson(scanresult.getItems());
 	}
 	
 	//retrieves all patient items
 	public static ScanResult getPatientItems() {
 		ScanRequest request = new ScanRequest()
-				.withTableName("Doctor");
+				.withTableName("Patient");
 		ScanResult scanresult = dynamo.scan(request);
 		return scanresult;
 	}
@@ -188,7 +212,7 @@ public class ClericDb {
 		}
 		
 		//retrieves a doctor item from the doctor table
-		public static ScanResult getDoctorItems(String value,String condition) {
+		public static String getDoctorItems(String value,String condition) {
 			ScanRequest request;
 			HashMap<String,AttributeValue> expression = new HashMap<String,AttributeValue>();
 			expression.put(":value", new AttributeValue().withS(value));
@@ -197,20 +221,26 @@ public class ClericDb {
 					.withFilterExpression(condition)
 					.withExpressionAttributeValues(expression);
 			ScanResult scanresult = dynamo.scan(request);
-			return scanresult;
+			return createJson(scanresult.getItems());
 		}
 	
 		//retrieves all doctor items
-		public static ScanResult getDoctorItems() {
+		public static String getDoctorItems() {
 			ScanRequest request = new ScanRequest()
 					.withTableName("Doctor");
 			ScanResult scanresult = dynamo.scan(request);
-			return scanresult;
+			return createJson(scanresult.getItems());
 		}
 	
 		public static boolean doctorLogin(String username, String password) {
-			ScanResult item = getDoctorItems(username,"username = :value");
-			return item.getItems().get(0).get("password").getS().equals(password);
+			HashMap<String,AttributeValue> expression = new HashMap<String,AttributeValue>();
+			expression.put(":value", new AttributeValue().withS(username));
+			ScanRequest request = new ScanRequest()
+					.withTableName("Doctor")
+					.withFilterExpression("username = :value")
+					.withExpressionAttributeValues(expression);
+			ScanResult scanresult = dynamo.scan(request);
+			return scanresult.getItems().get(0).get("password").getS().equals(password);
 		}
 		
 	//just used for testing purposes
@@ -218,17 +248,18 @@ public class ClericDb {
 		 connect();
 		 //Testing purposes
 		 //addSpecialtyItem("TestSpecialty");
-		 System.out.println(getSpecialtyItems("TestSpecialty","description = :value"));
-		 System.out.println(getSpecialtyItems());
+		 //System.out.println(getSpecialtyItems("TestSpecialty","description = :value"));
+		 //System.out.println(getSpecialtyItems());
 		 //working to see if there is a way to generalize where one method can query
 		 //almost anything from a table
 		 //still in progress
-		 //addPatientItem("jdoe1","password","123 Test Street", "John", "Doe",1,"Male","02/11/1991");
-		 System.out.println(getPatientItems("John","firstName = :value"));
+		 //addPatientItem("JohnnyW","terriblePassword","1923 Alcapone Street", "John", "Woody",1,"Male","05/21/1987");
+		 System.out.println(getPatientItems("John", "firstName= :value"));
 		 //addDoctorItem("delorean","88MPH","Emmett","Brown",1);
 		 System.out.println(getDoctorItems("Emmett","firstName=:value"));
-		 patientLogin("jdoe1","password");
+		 //patientLogin("jdoe1","password");
 		 System.out.println(patientLogin("jdoe1","password"));
+		 System.out.println(doctorLogin("delorean", "password5"));
 		 dynamo.shutdown();
 		 
 	}
