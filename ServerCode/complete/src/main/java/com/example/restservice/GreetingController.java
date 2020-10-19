@@ -1,10 +1,10 @@
 package com.example.restservice;
 
-import java.util.concurrent.atomic.AtomicLong;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class GreetingController {
@@ -15,6 +15,16 @@ public class GreetingController {
 	@GetMapping("/greeting")
 	public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
+	}
+
+	/*Potential Path for server side user validation
+	Method could accept username and password then verify that password server side
+	Respond with user succesfully validated or failed and the app could process that error message.
+	 */
+	@GetMapping("/validateUser")
+	public ValidateUser validateUser(@RequestParam String username, @RequestParam String password) {
+		System.out.println("running out of options");
+		return new ValidateUser(counter.incrementAndGet(), username, password);
 	}
 
 	@GetMapping("/savePatient")
@@ -36,15 +46,6 @@ public class GreetingController {
 	 */
 	@GetMapping("/getPassword")
 	public Greeting getPassword(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return new Greeting(counter.incrementAndGet(), String.format(template, name));
-	}
-
-	/*Potential Path for server side user validation
-	Method could accept username and password then verify that password server side
-	Respond with user succesfully validated or failed and the app could process that error message.
-	 */
-	@GetMapping("/validateUser")
-	public Greeting validateUser(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 
