@@ -41,11 +41,11 @@ function myApiRequestFunction()
 			{
 				location.replace("providerview.html");
 			}
-  			if(user == 'james2')
+  			if(user == 'JohnnyW')
   			{
   				location.replace("patientview.html");
   			}
-  			if(user != 'jdoe1' && user != 'james2')
+  			if(user != 'jdoe1' && user != 'JohnnyW')
   			{
   				location.replace("loginfailview.html");
   			}
