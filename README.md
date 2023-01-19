@@ -17,4 +17,5 @@ Incomplete Features -
 - Care plans for all medical conditions except for the Fever care plan
 
 Built By: Jason Bice, Sqielyr Person, Aydan Mufti, Jason LaPrad, and Eric Mo
+
 Final Project located in FeelBetter2020-main.zip
