@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:ClericPreview"
+      name = "ClericPreview">
+      <FileRef
+         location = "group:ClericPreview.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:ClericPreview"
+         name = "ClericPreview">
+         <FileRef
+            location = "group:ClericPreviewApp.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:AccentColor.colorset"
+               name = "AccentColor.colorset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Preview Content"
+            name = "Preview Content">
+            <Group
+               location = "group:Preview Assets.xcassets"
+               name = "Preview Assets.xcassets">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:ContentView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:ClericPreviewTests"
+         name = "ClericPreviewTests">
+         <FileRef
+            location = "group:ClericPreviewTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:ClericPreviewUITests"
+         name = "ClericPreviewUITests">
+         <FileRef
+            location = "group:ClericPreviewUITests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
